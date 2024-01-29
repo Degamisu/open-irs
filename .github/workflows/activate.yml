@@ -2,7 +2,8 @@ name: Open-irs
 
 on:
   issues:
-
+    types: opened
+    
     jobs:
       setup:
         runs-on: ubuntu-latest
