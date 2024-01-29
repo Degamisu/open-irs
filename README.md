@@ -2,7 +2,7 @@
 
 ## About
 
-[![Run npm start](https://github.com/Degamisu/open-irs/actions/workflows/main.yml/badge.svg?event=check_run)](https://github.com/Degamisu/open-irs/actions/workflows/main.yml)
+[![open-irs-server](https://github.com/Degamisu/open-irs/actions/workflows/main.yml/badge.svg?branch=main&event=workflow_dispatch)](https://github.com/Degamisu/open-irs/actions/workflows/main.yml)
 
 >Context: OpenIRS is a gitbot that responds to new issues
 

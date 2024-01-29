@@ -26,4 +26,7 @@ jobs:
       - name: Start OpenIRS server
         if: ${{ github.event.inputs.start == 'true' }}
         run: |
-          npm start
+          while true; do
+            npm start
+            sleep 60  # Sleep for 1 minute before restarting
+          done
