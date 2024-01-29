@@ -20,17 +20,11 @@ jobs:
           node-version: '14'
 
       - name: Install dependencies
-        run: |
-          npm install
+        run: npm install
 
       - name: Start OpenIRS server
         run: |
           while true; do
-            npm start
+            node index.js  # Use node to run index.js as the main entrypoint
             sleep 60  # wait a minute until restarting.
           done
-
-      # this part is for testing purposes only.
-      # backup of an "if" statement
-      # if: ${{ github.event.inputs.start == 'true' }}
-      
