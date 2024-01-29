@@ -2,6 +2,8 @@
 
 ## About
 
+[![Run npm start](https://github.com/Degamisu/open-irs/actions/workflows/main.yml/badge.svg?event=check_run)](https://github.com/Degamisu/open-irs/actions/workflows/main.yml)
+
 >Context: OpenIRS is a gitbot that responds to new issues
 
 OpenIRS is a very formal gitbot. This can be installed as a:
