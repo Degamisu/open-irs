@@ -22,9 +22,12 @@ jobs:
       - name: Install dependencies
         run: npm install
 
+      - name: Set up .env file
+        run: cp .env.example .env  # Copy .env.example to .env, adjust if needed
+
       - name: Start OpenIRS server
         run: |
           while true; do
-            node index.js  # Use node to run index.js as the main entrypoint
+            npm start
             sleep 60  # wait a minute until restarting.
           done
