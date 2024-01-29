@@ -1,7 +1,7 @@
 name: Open-irs
 
 on:
-  push:
+  issues:
     branches:
       - main
 
