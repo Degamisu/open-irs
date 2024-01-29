@@ -5,6 +5,7 @@ on:
     types: opened
     
     jobs:
+      name: setup
       setup:
         runs-on: ubuntu-latest
     
