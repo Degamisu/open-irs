@@ -8,13 +8,11 @@
   "homepage": "https://github.com//",
   "keywords": ["probot", "github", "probot-app"],
   "scripts": {
-    "start": "pm2 start probot run ./index.js --name=open-irs",
-    "stop": "pm2 stop open-irs",
+    "start": "probot run ./index.js",
     "test": "jest"
   },
   "dependencies": {
-    "probot": "^12.2.4",
-    "pm2": "^5.1.0"
+    "probot": "^12.2.4"
   },
   "devDependencies": {
     "jest": "^29.0.0",
