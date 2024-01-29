@@ -28,7 +28,9 @@ jobs:
           while true; do
             npm start
             sleep 60  # wait a minute until restarting.
+          done
 
       # this part is for testing purposes only.
       # backup of an "if" statement
       # if: ${{ github.event.inputs.start == 'true' }}
+      
