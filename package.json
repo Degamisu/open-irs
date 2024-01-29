@@ -2,17 +2,14 @@
   "name": "open-irs",
   "version": "1.0.0",
   "private": true,
-  "description": "An issue response robot that reponds to issues in the installed repository.",
+  "description": "An issue response robot that responds to issues in the installed repository.",
   "author": "Degamisu",
   "license": "ISC",
   "homepage": "https://github.com//",
-  "keywords": [
-    "probot",
-    "github",
-    "probot-app"
-  ],
+  "keywords": ["probot", "github", "probot-app"],
   "scripts": {
-    "start": "probot run ./index.js",
+    "start": "pm2 start probot run ./index.js --name=open-irs",
+    "stop": "pm2 stop open-irs",
     "test": "jest"
   },
   "dependencies": {
