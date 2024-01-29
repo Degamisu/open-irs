@@ -1,6 +1,14 @@
 # open-irs
 
-> A GitHub App built with [Probot](https://github.com/probot/probot) that An issue response robot that reponds to issues in the installed repository.
+## About
+
+>Context: OpenIRS is a gitbot that responds to new issues
+
+OpenIRS is a very formal gitbot. This can be installed as a:
+
+- Github App  <--   `recommended`
+- Local execution
+- Docker Container
 
 ## Setup
 
@@ -31,3 +39,5 @@ For more, check out the [Contributing Guide](CONTRIBUTING.md).
 ## License
 
 [ISC](LICENSE) © 2024 Degamisu
+
+**PULL REQUESTS WILL BE REQUIRED TO HAVE THIS UNCHANGED**
