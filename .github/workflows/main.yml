@@ -2,8 +2,6 @@ name: Open-irs
 
 on:
   issues:
-    branches:
-      - main
 
 jobs:
   setup:
