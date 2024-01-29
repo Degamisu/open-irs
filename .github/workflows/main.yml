@@ -1,25 +1,29 @@
-name: Open-irs
+name: open-irs
 
 on:
-  issues:
+  workflow_dispatch:
+    inputs:
+      start:
+        description: 'Start OpenIRS server'
 
 jobs:
-  setup:
+  run-open-irs:
     runs-on: ubuntu-latest
 
     steps:
       - name: Checkout code
         uses: actions/checkout@v2
 
-      - name: Set up Node.js
-        uses: actions/setup-node@v2
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
         with:
-          node-version: 14
+          node-version: '14'
 
       - name: Install dependencies
-        run: npm ci
-  run:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Run Probot App
-      - run: npm start
+        run: |
+          npm install
+
+      - name: Start OpenIRS server
+        if: ${{ github.event.inputs.start == 'true' }}
+        run: |
+          npm start
