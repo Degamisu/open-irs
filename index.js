@@ -3,6 +3,13 @@
  * @param {import('probot').Probot} app
  */
 module.exports = (app) => {
+  const fs = require('fs');
+  const path = require('path');
+  
+  const envPath = path.resolve(__dirname, '.env');
+  const envContents = fs.readFileSync(envPath, 'utf8');
+  app.log.info(`.env file contents: ${envContents}`);
+  
   // Your code here
   app.log.info("Yay, the app was loaded!");
 
