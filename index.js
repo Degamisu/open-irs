@@ -20,8 +20,6 @@ module.exports = (app) => {
     const issueComment = context.issue({
       body: `
 
-OpenIRS bot by \`Emi Yamashita\` at \`Degamisu\`.
-
 Hello, ${username}. Thank you for opening an issue at ${repository}!
 
 Some info for the developer:
@@ -33,7 +31,7 @@ Repository: ${repository}
 
 ---
 
-_This is an automated message from [open-irs](https://github.com/Degamisu/open-irs). Some data may be inaccurate._
+_This is an automated message from [open-irs](https://github.com/Degamisu/open-irs). Some data may be inaccurate. OpenIRS bot by \`Emi Yamashita\` at \`Degamisu\`._
 `
     });
 
