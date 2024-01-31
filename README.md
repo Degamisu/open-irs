@@ -12,6 +12,8 @@ OpenIRS is a very formal gitbot. This can be installed as a:
 - Local execution
 - Docker Container
 
+**Any help contributed to `open-irs` is very appreciated! <3**
+
 ## Setup
 
 ```sh
